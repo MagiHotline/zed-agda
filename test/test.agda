@@ -1,6 +1,6 @@
 {-# OPTIONS --cubical-compatible --safe #-}
 
-module System.Modal where
+module test where
 
 open import Data.Nat as Nat using (ℕ; zero; suc; _+_; _<_; _≤_)
 open import Data.List as List using (List; []; _∷_; map; concat; _++_)

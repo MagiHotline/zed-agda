@@ -12,7 +12,7 @@ impl zed::Extension for AgdaExtension {
         _language_server_id: &zed::LanguageServerId,
         worktree: &zed::Worktree,
     ) -> Result<zed::Command> {
-        // 1. Try to find it in the standard system PATH
+
         if let Some(path) = worktree.which("als") {
             return Ok(zed::Command {
                 command: path,
@@ -21,7 +21,8 @@ impl zed::Extension for AgdaExtension {
             });
         }
 
-        Err("Could not find 'als' (Agda Language Server) in your PATH. Please ensure you have installed it via cabal and added it to your PATH.".to_string())
+        Err("Could not find 'als' (Agda Language Server) in your PATH.
+            Please ensure you have installed it via cabal and added it to your PATH.".to_string())
     }
 }
 
