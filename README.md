@@ -1,6 +1,6 @@
-# Zed Agda
+# Agda LSP for Zed
 
-An [Agda](https://agda.readthedocs.io/en/latest/getting-started/what-is-agda.html) extension for [Zed](https://zed.dev).
+An [Agda](https://agda.readthedocs.io/en/latest/getting-started/what-is-agda.html) extension for [Zed](https://zed.dev). Credits to:
 
 - Tree-sitter: [tree-sitter-agda](https://github.com/tree-sitter/tree-sitter-agda)
 - Language Server: [Agda Language Server](https://github.com/agda/agda-language-server)
